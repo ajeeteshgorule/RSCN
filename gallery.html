@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Gallery • Rajashree Shahu College of Nursing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="gallery-page">
+    <header class="topbar">
+      <div class="container">
+        <div class="topbar__left">
+          <span><i class="icon-location"></i>🏦 Run By Rajashri Shahu Bahuuddeshiya va Aryogya Prsarak Mandal
+          </span>
+          <span><i class="icon-phone"></i>🏛️ B.Sc. Nursing College Code - 9270</span>
+        </div>
+        <div class="topbar__right">
+          <a href="tel:+918275312152">☎︎ +91-8275312152</a>
+          <a href="mailto:rshahubscwashim@gmail.com">✉ rshahubscwashim@gmail.com</a>
+  
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="public/RAJASHREE SHAHU LOGO.png" alt="Rajashree Shahu" />
+        </a>
+        <div class="navbar__links" id="navbarLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="gallery.html" class="is-active">Gallery</a>
+          <a href="mandate.html">MUHS Mandate</a>
+          <a href="notices.html">Notices</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="navbar__cta">
+          <a class="btn btn--nav" href="contact.html">Apply Now</a>
+          <button class="navbar__toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="gallery-hero">
+        <div class="container gallery-hero__content">
+          <div>
+            <span class="badge badge--light">Campus Gallery</span>
+            <h1>Memories that define the Rajashree Shahu nursing experience</h1>
+            <p>
+              Celebrate the spirit of our community through events, achievements, and everyday moments captured
+              across campus.
+            </p>
+          </div>
+          <div class="gallery-filters" id="galleryFilters">
+            <button class="is-active" data-filter="all">All</button>
+            <button data-filter="events">Events</button>
+            <button data-filter="students">Students & Staff</button>
+            <button data-filter="lab">Lab & Classroom</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-grid" id="galleryGrid">
+        <div class="container gallery-grid__items">
+          <!-- Laboratory & Campus Infrastructure -->
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/advance lab.jpeg" alt="Advanced Laboratory" />
+            <figcaption>Advanced Laboratory Facilities</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/classroom 1.jpeg" alt="Classroom 1" />
+            <figcaption>Modern Classroom 1</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/classroom 2.jpeg" alt="Classroom 2" />
+            <figcaption>Modern Classroom 2</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/computer lab.jpeg" alt="Computer Laboratory" />
+            <figcaption>Computer Laboratory</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab body part.jpeg" alt="Laboratory Body Parts Study" />
+            <figcaption>Anatomy Study Laboratory</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab human.jpeg" alt="Human Anatomy Laboratory" />
+            <figcaption>Human Anatomy Laboratory</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab instrument.jpeg" alt="Laboratory Instruments" />
+            <figcaption>Medical Instruments Lab</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab microscope.jpeg" alt="Laboratory Microscope" />
+            <figcaption>Microscopy Laboratory</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab sceleton 3.jpeg" alt="Skeleton Model 3" />
+            <figcaption>Skeleton Study Models</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab sceleton 4.jpeg" alt="Skeleton Model 4" />
+            <figcaption>Anatomy Skeleton Models</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab sceleton 5.jpeg" alt="Skeleton Model 5" />
+            <figcaption>Medical Education Models</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab sceletone 2.jpeg" alt="Skeleton Model 2" />
+            <figcaption>Skeletal System Study</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/lab sceletone.jpeg" alt="Skeleton Model" />
+            <figcaption>Anatomical Models</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/dummy baby.jpeg" alt="Pediatric Training Dummy" />
+            <figcaption>Pediatric Care Training</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/dummy body.jpeg" alt="Medical Training Dummy" />
+            <figcaption>Medical Training Models</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/dummy paitent.jpeg" alt="Patient Care Training" />
+            <figcaption>Patient Care Simulation</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/paitent bed.jpeg" alt="Patient Bed Training" />
+            <figcaption>Clinical Training Beds</figcaption>
+          </figure>
+          
+          <!-- College Structures -->
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/structure1.jpeg" alt="College Structure 1" />
+            <figcaption>College Building - Front View</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/structure2.jpeg" alt="College Structure 2" />
+            <figcaption>Campus Architecture</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="lab">
+            <img src="public/gallery/structure3.jpeg" alt="College Structure 3" />
+            <figcaption>College Campus View</figcaption>
+          </figure>
+          
+          <!-- Events & Celebrations -->
+          <figure class="gallery-item" data-category="events">
+            <img src="public/gallery/dance 1.jpeg" alt="Cultural Dance Performance 1" />
+            <figcaption>Cultural Dance Performance</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="events">
+            <img src="public/gallery/dance 2.jpeg" alt="Cultural Dance Performance 2" />
+            <figcaption>Traditional Dance Celebration</figcaption>
+          </figure>
+          
+      
+          <figure class="gallery-item" data-category="events">
+            <img src="public/gallery/fuction.jpeg" alt="College Function" />
+            <figcaption>Special College Function</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="events">
+            <img src="public/gallery/ganesh festival 1.jpeg" alt="Ganesh Festival Celebration" />
+            <figcaption>Ganesh Festival Celebration</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="events">
+            <img src="public/gallery/price distribution 1.jpeg" alt="Prize Distribution Ceremony" />
+            <figcaption>Prize Distribution Ceremony</figcaption>
+          </figure>
+          
+          <!-- Students & Staff -->
+          <figure class="gallery-item" data-category="">
+            <img src="public/gallery/chill.jpeg" alt="Students Relaxing" />
+            <figcaption>Students Leisure Time</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="students">
+            <img src="public/gallery/event 1.jpeg" alt="College Event 1" />
+            <figcaption>College Annual Event</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="students">
+            <img src="public/gallery/student 1.jpeg" alt="College Students" />
+            <figcaption>Nursing Students</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="students">
+            <img src="public/gallery/staff 1.jpeg" alt="College Staff" />
+            <figcaption>Dedicated Faculty & Staff</figcaption>
+          </figure>
+          
+          <!-- Sports & Recreation -->
+          <figure class="gallery-item" data-category="">
+            <img src="public/gallery/sports tabel tenis.jpeg" alt="Table Tennis Sports" />
+            <figcaption>Table Tennis Sports Activity</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__overlay"></div>
+      <div class="lightbox__container">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+        <img class="lightbox__image" id="lightboxImage" src="" alt="" />
+        <div class="lightbox__caption" id="lightboxCaption"></div>
+        <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox__next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="public/RAJASHREE SHAHU LOGO 2.png" alt="Rajashree Shahu" />
+          </a>
+          <p>Building brighter healthcare futures through nursing excellence.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><img src="public/icon/facebook.png" alt="Facebook" /></a>
+            <a href="#" aria-label="Twitter"><img src="public/icon/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/rscn_washim/" target="_blank" aria-label="Instagram"><img src="public/icon/instagram.png" alt="Instagram" /></a>
+            <a href="#" aria-label="YouTube"><img src="public/icon/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html#bsc">B.Sc. Nursing</a></li>
+            <li><a href="courses.html#pbsc">P.B.Sc. Nursing</a></li>
+            <li><a href="courses.html#gnm">GNM</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="mandate.html">MUHS Mandate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul>
+            <li>
+              <span class="footer__icon">📍</span>
+              Rajashri Shahu College Campus, Pusad Road, Kakaddati Phata, Washim, Maharashtra 444505
+            </li>
+            <li>
+              <span class="footer__icon">📞</span>
+              <a href="tel:+918275312152">+91-8275312152</a>
+            </li>
+            <li>
+              <span class="footer__icon">✉️</span>
+              <a href="mailto:rshahubscwashim@gmail.com">rshahubscwashim@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Rajashree Shahu College of Nursing. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
+
