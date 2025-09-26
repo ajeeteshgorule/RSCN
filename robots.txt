@@ -1,0 +1,60 @@
+# Robots.txt for Rajashree Shahu College of Nursing
+# Website: https://shahunursing.com
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block access to sensitive directories and files
+Disallow: /assets/
+Disallow: /public/gallery/
+Disallow: /public/courses/
+Disallow: /public/hero/
+Disallow: /public/leadership/
+Disallow: /public/icon/
+Disallow: *.pdf
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Allow access to important assets
+Allow: /public/favicon.ico
+Allow: /public/favicon-16x16.png
+Allow: /public/favicon-32x32.png
+Allow: /public/apple-touch-icon.png
+Allow: /public/android-chrome-192x192.png
+Allow: /public/android-chrome-512x512.png
+Allow: /public/site.webmanifest
+Allow: /public/logo.webp
+Allow: /public/college.webp
+Allow: /public/campus.webp
+
+# Allow CSS and JS for better rendering
+Allow: /assets/style.css
+Allow: /assets/script.js
+
+# Sitemap location
+Sitemap: https://shahunursing.com/sitemap.xml
+
+# Additional guidelines
+# Cache delay for polite crawling
+Crawl-delay: 1
+
+# Host specification
+Host: https://shahunursing.com
