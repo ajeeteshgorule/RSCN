@@ -18,6 +18,25 @@
   font-size: 1rem;
   margin-right: 0.5rem;
 }
+/* 1. Force GPU rendering for smoother scroll */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Optimize animations & transitions */
+.course-layout, .course-image img, .navbar, section {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* 3. Reduce expensive effects during scroll */
+.course-layout {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
 .course-cards {
   padding: clamp(3rem, 5vw, 5rem) 0;
 }
@@ -94,6 +113,8 @@
 .course-section {
   padding: clamp(4rem, 6vw, 6rem) 0;
   background: var(--white);
+  will-change: auto;
+  contain: layout style;
 }
 
 .course-section:nth-child(odd) {
@@ -105,6 +126,7 @@
   grid-template-columns: 1fr 1.2fr;
   gap: clamp(3rem, 5vw, 5rem);
   align-items: center;
+  contain: layout;
 }
 
 .course-section--reverse .course-layout {
@@ -131,11 +153,12 @@
   height: 100%;
   object-fit: cover;
   min-height: 500px;
-  transition: transform 0.3s ease;
+  transition: opacity 0.2s ease;
+  will-change: auto;
 }
 
 .course-image:hover img {
-  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .course-content h2 {
