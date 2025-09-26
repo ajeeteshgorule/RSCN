@@ -3280,7 +3280,7 @@ section {
     display: flex;
   }
 
-  .navbar__cta .btn--outline {
+  .navbar__cta .btn--nav {
     display: none;
   }
 }
