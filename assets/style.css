@@ -580,6 +580,19 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .mandate-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .mandate-card .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .mandate-updates__grid {
   display: grid;
   gap: 1.5rem;
